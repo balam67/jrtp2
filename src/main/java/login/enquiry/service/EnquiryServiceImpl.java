@@ -37,6 +37,13 @@ public class EnquiryServiceImpl implements EnquiryService{
         return EnquiryRepository.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException("Enquiry not found with id " + id));
     }
+
+	@Override
+	public void deleteEntityById(Long id) {
+		EnquiryRepository.deleteById(id);
+	}
+
+	
 	
    
 }

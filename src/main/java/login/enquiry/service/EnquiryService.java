@@ -10,4 +10,5 @@ public interface EnquiryService {
     List<EnquiryEntity> getAllEnquiries();
 
     EnquiryEntity getById(Long id);
+    void deleteEntityById(Long id);
 }

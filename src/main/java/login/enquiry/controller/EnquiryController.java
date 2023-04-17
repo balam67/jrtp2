@@ -75,4 +75,10 @@ public class EnquiryController {
 	    }
 	    
 	    
+	    @GetMapping("/deletebyid")
+	    public String deleteEntity(@RequestParam("id") Long id) {
+	    	enquiryService.deleteEntityById(id);
+	    	 return "redirect:/allenquries";
+	    }
+	    
 }

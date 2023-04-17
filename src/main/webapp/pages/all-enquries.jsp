@@ -68,6 +68,7 @@
 				<td>${enquiry.classMode}</td>
 				<td>${enquiry.enquiryStatus}</td>
 				<td><a href="editenquiry?id=${enquiry.id}" class="btn btn-primary">Edit</a></td>
+				<td><a href="deletebyid?id=${enquiry.id}" class="btn btn-primary">Delete</a></td>
 			</tr>
 		</c:forEach>
 	</table>
